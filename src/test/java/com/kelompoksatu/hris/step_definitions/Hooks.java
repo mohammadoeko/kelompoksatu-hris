@@ -57,6 +57,15 @@ public class Hooks {
         }
     }
 
+    public void waiting(int detik) {
+        try {
+            Thread.sleep(1000*detik);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
     public static void scroll(int vertical) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,"+vertical+")");
