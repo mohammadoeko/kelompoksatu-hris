@@ -46,7 +46,7 @@ public class TestEditData {
 
     @Then("TCC.Tele.011.EditData Menampilkan halaman distribusi")
     public void tcc_tele_11_menampilkan_halaman_distribusi() {
-        Assert.assertEquals(editData.getTxtStatus(), "Status");
+        Assert.assertEquals(editData.getTxtDistribusi(), "Distribusi");
         extentTest.log(LogStatus.PASS,"Menampilkan halaman distribusi");
     }
 
