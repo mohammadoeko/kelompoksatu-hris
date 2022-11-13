@@ -22,8 +22,8 @@ public class EditData {
     @FindBy(id = "52833_query")
     WebElement clickDistributeData;
 
-    @FindBy(xpath = "//*[@id=\"tl_distribute--52075\"]/table/tbody/tr/td[1]/label")
-    WebElement txtStatus;
+    @FindBy(id = "tl_distribute--52071_text")
+    WebElement txtDistribusi;
 
     @FindBy(id = "52851_query")
     WebElement clickEditData;
@@ -49,8 +49,8 @@ public class EditData {
         clickDistributeData.click();
     }
 
-    public String getTxtStatus() {
-        return txtStatus.getText();
+    public String getTxtDistribusi() {
+        return txtDistribusi.getAttribute("value");
     }
 
     public void clickEditData() {
