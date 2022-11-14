@@ -20,6 +20,13 @@ public enum TestScenarios {
     T11("TCC.Tele.011 Tidak Masuk halaman edit data"),
     T12("TCC.Tele.012.EditData Tidak menginputkan data dan klik search"),
     T13("TCC.Tele.013.EditData Search input sempurna"),
+
+    //REPORT AGREE
+    T14("TCC.Tele.001 Masuk halaman report agree"),
+    T15("TCC.Tele.001.Agree.View Memasukkan start date dan end date"),
+    T16("TCC.Tele.002.Agree.View Tidak memasukkan tanggal awal dan akhir"),
+    T17("TCC.Tele.003.Agree.View Memasukkan start date"),
+    T18("TCC.Tele.004.Agree.View Memasukkan end date"),
     ;
 
     private String testName;
