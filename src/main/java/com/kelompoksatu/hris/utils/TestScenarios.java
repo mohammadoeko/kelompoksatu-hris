@@ -27,6 +27,15 @@ public enum TestScenarios {
     T16("TCC.Tele.002.Agree.View Tidak memasukkan tanggal awal dan akhir"),
     T17("TCC.Tele.003.Agree.View Memasukkan start date"),
     T18("TCC.Tele.004.Agree.View Memasukkan end date"),
+    T19("TCC.Tele.001.Agree.Export Memasukkan start date dan end date"),
+    T20("TCC.Tele.002.Agree.Export Tidak memasukkan start date dan end date"),
+    T21("TCC.Tele.001.Agree.Showpage show entries 10"),
+    T22("TCC.Tele.002.Agree.Showpage show entries 25"),
+    T23("TCC.Tele.002.Agree.Showpage show entries 50"),
+    T24("TCC.Tele.002.Agree.Showpage show entries 25"),
+    T25("TCC.Tele.001.Agree.Nextpage show page 2"),
+    T26("TCC.Tele.002.Agree.Nextpage show last page"),
+    T27("TCC.Tele.003.Agree.Nextpage show first page"),
     ;
 
     private String testName;

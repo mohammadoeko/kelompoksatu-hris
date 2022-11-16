@@ -5,10 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(tags = "",
         features = {
-//                "src/main/resources/features/02.UploadData.feature",
-//                "src/main/resources/features/03.DistributeData.feature",
-//                "src/main/resources/features/04.EditData.feature",
-                "src/main/resources/features/07.ReportAgree.feature",
+                "src/main/resources/features/02.UploadData.feature",
+                "src/main/resources/features/03.DistributeData.feature",
+                "src/main/resources/features/04.EditData.feature",
+                "src/main/resources/features/08.ReportAgree.feature",
         },
         glue = "com.kelompoksatu.hris.step_definitions",
         plugin = {"pretty","html:target/cucumber-reports.html","json:target/cucumber.json"})
