@@ -36,6 +36,18 @@ public enum TestScenarios {
     T25("TCC.Tele.001.Agree.Nextpage show page 2"),
     T26("TCC.Tele.002.Agree.Nextpage show last page"),
     T27("TCC.Tele.003.Agree.Nextpage show first page"),
+
+    //REPORT ACTIVITY
+    T28("TCC.Tele.001.Report.Activity Masuk halaman report activity"),
+    T29("TCC.Tele.001.Activity.View Memilih agent dan tanggal"),
+    T30("TCC.Tele.002.Activity.View Memilih tanggal dan tidak memilih agent"),
+    T31("TCC.Tele.001.Activity.Export Export data setelah memilih agent dan memasukkan tanggal awal dan akhir"),
+    T32("TCC.Tele.002.Activity.Export Export data tanpa memilih agent dan memasukkan tanggal awal dan akhir"),
+    T33("TCC.Tele.001.Activity.Showpage Show entries 10"),
+    T34("TCC.Tele.001.Activity.Nextpage Show page 2"),
+    T35("TCC.Tele.002.Activity.Nextpage Show lastpage"),
+    T36("TCC.Tele.003.Activity.Nextpage Show firstpage"),
+
     ;
 
     private String testName;
