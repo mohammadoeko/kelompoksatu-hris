@@ -46,10 +46,10 @@ public class ReportAgree {
     @FindBy(id = "51797_query")
     WebElement btnExport;
 
-    @FindBy(xpath = "//*[@id=\"tbody\"]/tr[255]/td[2]")
+    @FindBy(xpath = "//*[@id=\"tbody\"]/tr[257]/td[2]")
     WebElement txtSizeFile;
 
-    @FindBy(xpath = "//*[@id=\"tbody\"]/tr[256]/td[2]")
+    @FindBy(xpath = "//*[@id=\"tbody\"]/tr[258]/td[2]")
     WebElement txtSizeFileTwo;
 
     //Show entries
@@ -69,8 +69,6 @@ public class ReportAgree {
     WebElement txtShowPage100;
 
     //NEXT PAGE
-
-
     @FindBy(xpath = "//*[@id=\"tl_report_setuju--51776\"]/div[9]/ul/li[3]")
     WebElement btnPage2;
 
