@@ -35,9 +35,9 @@ public class TestUploadData {
         extentTest.log(LogStatus.PASS, "Klik data");
     }
 
-    @And("TCC.Tele.006 klik upload data")
-    public void tcc_tele_006_klik_upload_data() {
-        uploadData.clickBtnUploadData();
+    @And("TCC.Tele.006 klik menu upload data")
+    public void tcc_tele_006_klik_menu_upload_data() {
+        uploadData.clickMenuBtnUploadData();
         extentTest.log(LogStatus.PASS,"Klik upload data");
     }
 
@@ -64,9 +64,9 @@ public class TestUploadData {
         extentTest.log(LogStatus.PASS, "Klik Data untuk simpan");
     }
 
-    @And("TCC.Tele.007 klik upload data untuk simpan")
-    public void tcc_tele_007_klik_upload_data_simpan() {
-        uploadData.clickBtnUploadData();
+    @And("TCC.Tele.007 klik menu upload data untuk simpan")
+    public void tcc_tele_007_klik_menu_upload_data_simpan() {
+        uploadData.clickMenuBtnUploadData();
         extentTest.log(LogStatus.PASS,"Klik upload data untuk simpan");
     }
 
@@ -99,9 +99,9 @@ public class TestUploadData {
         extentTest.log(LogStatus.PASS, "Klik data untuk file txt");
     }
 
-    @And("TCC.Tele.008 klik upload data untuk file txt")
-    public void tcc_tele_008_klik_upload_data_untuk_file_txt() {
-        uploadData.clickBtnUploadData();
+    @And("TCC.Tele.008 klik menu upload data untuk file txt")
+    public void tcc_tele_008_klik_menu_upload_data_untuk_file_txt() {
+        uploadData.clickMenuBtnUploadData();
         extentTest.log(LogStatus.PASS,"Klik upload data untuk file txt");
     }
 
@@ -134,9 +134,9 @@ public class TestUploadData {
         extentTest.log(LogStatus.PASS, "Klik Data untuk simpan file txt");
     }
 
-    @And("TCC.Tele.009 klik upload data untuk simpan file txt")
-    public void tcc_tele_009_klik_upload_data_simpan_file_txt() {
-        uploadData.clickBtnUploadData();
+    @And("TCC.Tele.009 klik menu upload data untuk simpan file txt")
+    public void tcc_tele_009_klik__menu_upload_data_simpan_file_txt() {
+        uploadData.clickMenuBtnUploadData();
         extentTest.log(LogStatus.PASS,"Klik upload data untuk simpan file txt");
     }
 
@@ -161,7 +161,7 @@ public class TestUploadData {
 
     @Then("TCC.Tele.009 Menampilkan popup data kosong file txt")
     public void tcc_tele_009_menampilkan_popup_data_kosong_file_txt() {
-        hooks.waiting(3);
+        hooks.waiting(4);
         Assert.assertEquals(uploadData.getTxtInformasiSimpan(), "Data Kosong");
         extentTest.log(LogStatus.PASS, "menampilkan popup data kosong file txt");
     }

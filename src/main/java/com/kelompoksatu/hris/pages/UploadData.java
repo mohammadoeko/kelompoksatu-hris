@@ -32,7 +32,7 @@ public class UploadData {
     WebElement clickData;
 
     @FindBy(id = "52837_query")
-    WebElement btnUploadData;
+    WebElement btnMenuUploadData;
 
     @FindBy(id = "tl_upload_new--52043_text")
     WebElement importFile;
@@ -68,8 +68,8 @@ public class UploadData {
     }
 
     //Upload
-    public void clickBtnUploadData() {
-        btnUploadData.click();
+    public void clickMenuBtnUploadData() {
+        btnMenuUploadData.click();
     }
 
     public void importFile(String pilihFile) {
