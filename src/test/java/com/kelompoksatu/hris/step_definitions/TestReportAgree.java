@@ -257,7 +257,7 @@ public class TestReportAgree {
     public void tcc_tele_001_agree_export_mendownload_file_sesuai_tanggal_input() {
         hooks.waiting(5);
         driver.navigate().to("file:///C:/Users/Moh_Eko11/Downloads/");
-        Assert.assertEquals(reportAgree.getTxtSizeFileTwo(), "13.5 kB");
+        Assert.assertTrue(reportAgree.getTxtSizeFileTwo().contains("exportsetuju"));
         extentTest.log(LogStatus.PASS,"mendownload file sesuai tanggal input");
     }
 
@@ -285,7 +285,7 @@ public class TestReportAgree {
     public void tcc_tele_002_agree_export_mendownload_file_sesuai_tanggal_input() {
         hooks.waiting(5);
         driver.navigate().to("file:///C:/Users/Moh_Eko11/Downloads/");
-        Assert.assertEquals(reportAgree.getTxtSizeFile(), "30.0 kB");
+        Assert.assertTrue(reportAgree.getTxtSizeFile().contains("exportsetuju"));
         extentTest.log(LogStatus.PASS,"mendownload file sesuai tanggal input");
     }
 
