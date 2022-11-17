@@ -323,6 +323,7 @@ public class TestReportActivity {
 
     @Then("TCC.Tele.001.Activity.Showpage menampilkan data sampai 10")
     public void tcc_tele_001_activity_showpage_menampilkan_data_sampai_10() {
+        hooks.waiting(2);
         Assert.assertEquals(reportActivity.getTxtShowEntries10(), "tesaja 4");
         extentTest.log(LogStatus.PASS,"Menampilkan data sampai 10");
     }
