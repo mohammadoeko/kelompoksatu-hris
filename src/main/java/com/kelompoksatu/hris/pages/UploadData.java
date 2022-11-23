@@ -53,10 +53,20 @@ public class UploadData {
     @FindBy(xpath = "//*[@id=\"nikita-form-dialog\"]/p")
     WebElement txtInformasiSimpan;
 
+    @FindBy(xpath = "//body[1]/div[8]/div[3]/div[1]/button[1]/span[1]")
+    WebElement btnOk_data_berhasil_disimpan;
+
+    @FindBy(id= "tl_upload_new--52045-cell-0-0")
+    WebElement txtInformasi_databerhasildisimpan;
+
     public void formLogin(String username, String password) {
         this.usernameLogin.sendKeys(username);
         this.passwordLogin.sendKeys(password);
         btnSignin.click();
+    }
+
+    public void Click_btn_Ok_Data_berhasil_Simpan() {
+        btnOk_data_berhasil_disimpan.click();
     }
 
     public void btnOkWelcome() {
@@ -65,6 +75,10 @@ public class UploadData {
 
     public void clickData() {
         clickData.click();
+    }
+
+    public String getTxtInformasi_databerhasildisimpan() {
+        return txtInformasi_databerhasildisimpan.getText();
     }
 
     //Upload
