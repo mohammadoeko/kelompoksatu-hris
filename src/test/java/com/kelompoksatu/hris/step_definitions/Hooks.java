@@ -63,5 +63,13 @@ public class Hooks {
     }
 
 
+    public static void waiting(int detik) {
+        try {
+            Thread.sleep(1000*detik);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 }
 

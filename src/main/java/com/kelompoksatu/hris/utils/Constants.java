@@ -9,5 +9,7 @@ public class Constants {
 
     public static final String CHROMEHEADLESS = "ChromeHeadless";
 
-    public static final String URL = "";
+    public static final String URL = "https://sqa.peluangkerjaku.com/tele/";
+
+    public static final String URLSalah ="https://sqa.peluangkerjaku.com/telewad/";
 }
